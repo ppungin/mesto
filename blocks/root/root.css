@@ -1,0 +1,13 @@
+.root {
+    background-color: #000000;
+    font-family: 'Inter', Arial, sans-serif;
+    color: white;
+}
+
+
+.line {
+    width: 100%;
+    size: 1px;
+    color: #545454;
+}
+
