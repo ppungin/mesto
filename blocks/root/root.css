@@ -5,6 +5,10 @@
 }
 
 
+
+
+
+
 .line {
     max-width: 880px;
     margin: 0 auto;
@@ -15,19 +19,34 @@
 }
 
 .content {
-    max-width: 882px;
     margin: auto;
+    margin-top: 40px;
+    max-width: 882px;
     padding-left: 19px;
     padding-right: 19px;
 }
 
+@media (max-width : 640px) {
+    .content {
+        margin-top: 42px;
+    }
+
+}
+
 .profile{
     margin: auto;
-    margin-top: 40px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: flex-start;
+
+}
+
+@media (max-width : 620px) {
+    .profile {
+        flex-direction: column;
+        align-content: center;
+    }
 
 }
 
@@ -37,16 +56,42 @@
     border-radius: 120px;
 }
 
+@media (max-width : 620px) {
+    .profile__avatar {
+        margin: auto;
+    }
+
+}
+
 .profile__info{
     margin-top: 18px;
     margin-left: 30px;
-    width: 336px;
     margin-right: 50px;
+    display: grid;
+    grid-template-columns: minmax(201px,max-content) max-content;
+    grid-template-rows: minmax(38px, max-content) max-content;
+    grid-row-gap: 4px;
+    grid-column-gap: 17px;
+    grid-template-areas: 
+    "a b"
+    "c c"
+    ;
+}
+
+@media (max-width : 620px) {
+    .profile__info {
+        margin: auto;
+        margin-top: 10.25px;
+    }
+
 }
 
 
 .profile__name{
+    grid-area: a;
+    width: 100%;
     margin: auto;
+    margin-bottom: 0;
     font-style: normal;
     font-weight: 500;
     font-size: 42px;
@@ -57,16 +102,55 @@
     white-space: nowrap;
 }
 
+@media (max-width : 882px) {
+    .profile__name {
+        font-size: calc( (100vw - 320px)/(882 - 320) * (42 - 27) + 27px);      
+    }
+
+}
+
+@media (max-width : 620px) {
+    .profile__name {     
+        text-align: center;
+    }
+
+}
+
 .edit_button{
-    padding-left: 17px;
+    grid-area: b;
+    height: 24px;
+    padding-top: 10px;
+    margin-bottom:0;
+    align-self: center;
+}
+
+@media (max-width : 882px) {
+    .edit_button {     
+        height: calc( (100vw - 320px)/(882 - 320) * (24 - 18) + 18px);
+    }
+
 }
 
 .profile__profession{
+    grid-area: c;
     height: max-content;
-    margin: auto;
+    margin: 0;
     font-weight: normal;
     font-size: 18px;
     line-height: 22px;
+    text-overflow: ellipsis;
+    float: left;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@media (max-width : 620px) {
+    .profile__profession {
+        margin: auto;
+        align-self: center;
+        text-align: center;
+    }
+
 }
 
 .add-button{
@@ -79,6 +163,15 @@
     box-sizing: border-box;
     border-radius: 2px;
     display: grid;
+
+}
+
+@media (max-width : 620px) {
+    .add-button {
+        margin: auto;
+        margin-top: 36px;
+        width: 100%;
+    }
 
 }
 
@@ -110,6 +203,20 @@
     grid-row-gap: 21px;
     grid-column-gap: 18px;
     
+}
+
+@media (max-width : 882px) {
+    .elements {     
+        margin-top: calc( (100vw - 320px)/(882 - 320) * (51 - 36) + 36px);
+        }
+
+}
+
+@media (max-width : 620px) {
+    .elements {
+        grid-row-gap: 20px;
+    }
+
 }
 
 .element__image{
@@ -155,9 +262,19 @@
     padding-bottom: 60px;
 }
 
+@media (max-width : 882px) {
+    .footer {     
+        margin-top: calc( (100vw - 320px)/(882 - 320) * (66 - 48) + 48px);
+        padding-bottom: calc( (100vw - 320px)/(882 - 320) * (60 - 36) + 36px);
+    }
+
+}
+
 .footer__copyright{
     color: #545454;
     font-weight: normal;
     font-size: 18px;
     line-height: 22px;
 }
+
+
