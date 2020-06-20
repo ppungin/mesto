@@ -317,14 +317,22 @@
     right: 0;
     bottom: 0;
     left: 0;
+    padding-right: 20px;
+    padding-left: 20px;
     align-self: center;
-    /* display: none; */
+    display: none;
     color: black;
 }
 
+/* .pop-up_active {
+    display: block;
+} */
+
 .popup__container {
-    height: 260px;
-    width: 358px;
+    min-height: 260px;
+    max-height: 90%;
+    max-width: 358px;
+    min-width: 208px;
     background-color: #FFFFFF;
     margin: auto;
     margin-top: calc(50vh - 330px/2);
@@ -401,4 +409,11 @@
     top: -45px;
     right: -45px;
     z-index: 2;
+}
+
+@media (max-width : 530px) {
+    .close_icon{
+        top: -55px;
+        right: -10px;
+    }
 }
