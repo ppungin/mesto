@@ -2,12 +2,19 @@
     margin-top: 18px;
     margin-left: 30px;
     margin-right: 50px;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: minmax(201px,-webkit-max-content) 17px minmax(24px,1fr);
+    -ms-grid-columns: minmax(201px,max-content) 17px minmax(24px,1fr);
+    grid-template-columns: minmax(201px,-webkit-max-content) minmax(24px,1fr);
     grid-template-columns: minmax(201px,max-content) minmax(24px,1fr);
+    -ms-grid-rows: minmax(38px, -webkit-max-content) 4px 1fr;
+    -ms-grid-rows: minmax(38px, max-content) 4px 1fr;
+    grid-template-rows: minmax(38px, -webkit-max-content) 1fr;
     grid-template-rows: minmax(38px, max-content) 1fr;
     grid-row-gap: 4px;
     grid-column-gap: 17px;
-    grid-template-areas: 
+        grid-template-areas: 
     "profile__name edit"
     "profession profession"
     ;
