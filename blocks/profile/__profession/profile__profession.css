@@ -1,0 +1,31 @@
+
+.profile__profession{
+    grid-area: profession;
+    width: 100%;
+    height: max-content;
+    margin: 0;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-overflow: ellipsis;
+    float: left;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@media (max-width : 882px) {
+    .profile__profession {     
+        font-size: calc( (100vw - 320px)/(882 - 320) * (18 - 14) + 14px);
+        line-height: calc( (100vw - 320px)/(882 - 320) * (22 - 17) + 17px);
+    }
+
+}
+
+@media (max-width : 620px) {
+    .profile__profession {
+        margin: auto;
+        align-self: center;
+        text-align: center;
+    }
+
+}

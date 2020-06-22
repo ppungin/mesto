@@ -8,307 +8,7 @@
 
 
 
-
-.line {
-    max-width: 880px;
-    margin: 0 auto;
-    size: 1px;
-    color: #545454;
-    opacity: 0.7;
-    position: relative;
-}
-
-.content {
-    margin: auto;
-    margin-top: 40px;
-    max-width: 882px;
-    padding-left: 19px;
-    padding-right: 19px;
-}
-
-@media (max-width : 640px) {
-    .content {
-        margin-top: 42px;
-    }
-
-}
-
-.profile{
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-
-}
-
-@media (max-width : 620px) {
-    .profile {
-        flex-direction: column;
-        align-content: center;
-    }
-
-}
-
-.profile__avatar {
-    width: 120px;
-    height: 120px;
-    border-radius: 120px;
-}
-
-@media (max-width : 620px) {
-    .profile__avatar {
-        margin: auto;
-    }
-
-}
-
-.profile__info{
-    margin-top: 18px;
-    margin-left: 30px;
-    margin-right: 50px;
-    display: grid;
-    grid-template-columns: minmax(201px,max-content) max-content;
-    grid-template-rows: minmax(38px, max-content) max-content;
-    grid-row-gap: 4px;
-    grid-column-gap: 17px;
-    grid-template-areas: 
-    "a b"
-    "c c"
-    ;
-}
-
-
-@media (max-width : 882px) {
-    .profile__info {
-        grid-column-gap: calc( (100vw - 320px)/(882 - 320) * (17 - 4) + 4px);      
-    }
-
-}
-
-@media (max-width : 620px) {
-    .profile__info {
-        margin: auto;
-        margin-top: 10.25px;
-    }
-
-}
-
-
-.profile__name{
-    grid-area: a;
-    width: 100%;
-    margin: auto;
-    margin-bottom: 0;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 42px;
-    line-height: 56px;
-    text-overflow: ellipsis;
-    float: left;
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-@media (max-width : 882px) {
-    .profile__name {
-        font-size: calc( (100vw - 320px)/(882 - 320) * (42 - 27) + 27px);      
-    }
-
-}
-
-@media (max-width : 620px) {
-    .profile__name {     
-        text-align: center;
-    }
-
-}
-
-.edit_button{
-    grid-area: b;
-    height: 24px;
-    padding-top: 10px;
-    margin-bottom:0;
-    align-self: center;
-    transition: opacity 0.4s ease;
-
-}
-
-.edit_button:hover{
-    opacity: 0.6;
-    cursor: pointer;
-}
-
-@media (max-width : 882px) {
-    .edit_button {     
-        height: calc( (100vw - 320px)/(882 - 320) * (24 - 18) + 18px);
-        padding-top: calc( (100vw - 320px)/(882 - 320) * (10 - 2) + 2px);
-    }
-
-}
-
-.profile__profession{
-    grid-area: c;
-    height: max-content;
-    margin: 0;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 22px;
-    text-overflow: ellipsis;
-    float: left;
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-@media (max-width : 882px) {
-    .profile__profession {     
-        font-size: calc( (100vw - 320px)/(882 - 320) * (18 - 14) + 14px);
-        line-height: calc( (100vw - 320px)/(882 - 320) * (22 - 17) + 17px);
-    }
-
-}
-
-@media (max-width : 620px) {
-    .profile__profession {
-        margin: auto;
-        align-self: center;
-        text-align: center;
-    }
-
-}
-
-.add-button{
-    margin: auto;
-    margin-right:0;
-    width: 150px;
-    min-width: 50px; 
-    height: 50px;
-    border: 2px solid #FFFFFF;
-    box-sizing: border-box;
-    border-radius: 2px;
-    display: grid;
-    transition: opacity 0.4s ease;
-
-}
-
-.add-button:hover{
-    opacity: 0.6;
-    cursor: pointer;
-}
-
-@media (max-width : 620px) {
-    .add-button {
-        margin: auto;
-        margin-top: 36px;
-        width: 100%;
-    }
-
-}
-
-.add-button__plus{
-    justify-self: center;
-	align-self: center;
-}
-
-
-
-.footer {
-    max-width: 882px;
-    margin: auto;
-    margin-bottom: 0;
-    padding: 0;
-}
-
-.footer__copyright{
-    margin:0;
-    padding: 0;
-}
-
-.elements {
-    margin: auto;
-    margin-top: 51px;
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(282px, 1fr));
-    grid-row-gap: 21px;
-    grid-column-gap: 18px;
-    
-}
-
-@media (max-width : 882px) {
-    .elements {     
-        margin-top: calc( (100vw - 320px)/(882 - 320) * (51 - 36) + 36px);
-        }
-
-}
-
-@media (max-width : 620px) {
-    .elements {
-        grid-row-gap: 20px;
-    }
-
-}
-
-.element__image{
-    height: 282px;
-}
-
-.element {
-    margin: auto;
-    width: 282px;
-    height: 361px;
-    border-radius: 10px;
-    background-color: white;
-}
-
-.element__place {
-    width: 218px;
-    margin: 0;
-    margin-top: 25px;
-    margin-left: 21px;
-    font-weight: 900;
-    font-size: 24px;
-    line-height: 29px;
-    text-overflow: ellipsis;
-    float: left;
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-.element__place_black{
-    color: black;
-}
-
-.element__like{
-    margin-top: 31px;
-}
-
-.footer{
-    max-width: 882px;
-    margin: auto;
-    margin-top: 66px;
-    padding-left: 19px;
-    padding-right: 19px;
-    padding-bottom: 60px;
-}
-
-@media (max-width : 882px) {
-    .footer {     
-        margin-top: calc( (100vw - 320px)/(882 - 320) * (66 - 48) + 48px);
-        padding-bottom: calc( (100vw - 320px)/(882 - 320) * (60 - 36) + 36px);
-    }
-
-}
-
-.footer__copyright{
-    color: #545454;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 22px;
-}
-
-
-.pop-up{
+.popup{
     position:absolute;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 2;
@@ -324,7 +24,7 @@
     color: black;
 }
 
-.pop-up_active {
+.popup_opened {
     display: block;
 }
 
@@ -343,14 +43,6 @@
 }
 
 
-/* @media (max-width : 530px) {
-    .popup__container{
-        height: 100%;
-        width: 100%;
-        margin: 0;
-    }
-} */
-
 .edit-profile {
     margin: 0 auto;
     font-style: normal;
@@ -359,24 +51,24 @@
     line-height: 29px;
 }
 
-.edit-name{
+.input__text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    border: none;
+}
+
+.input__text_type_name{
     margin: auto;
     margin-bottom: 12px;
     margin-top: 54px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 17px;
 }
 
-.edit-profession{
+.input__text_type_profession{
     margin: auto;
     margin-bottom: 12px;
     margin-top: 30px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 17px;
 }
 
 .button-save {
@@ -401,7 +93,11 @@
     font-weight: normal;
     font-size: 18px;
     line-height: 22px;
+}
 
+.button-save_disabled{
+    background: white;
+    color: black;
 }
 
 .close_icon {
@@ -409,6 +105,12 @@
     top: -45px;
     right: -45px;
     z-index: 2;
+    transition: opacity 0.4s ease;
+}
+
+.close_icon:hover{
+    opacity: 0.6;
+    cursor: pointer;
 }
 
 @media (max-width : 530px) {

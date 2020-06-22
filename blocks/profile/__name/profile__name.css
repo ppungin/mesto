@@ -1,0 +1,28 @@
+.profile__name{
+    /* grid-area: 'profile__name'; */
+    width: 100%;
+    margin: auto;
+    margin-bottom: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 56px;
+    text-overflow: ellipsis;
+    float: left;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@media (max-width : 882px) {
+    .profile__name {
+        font-size: calc( (100vw - 320px)/(882 - 320) * (42 - 27) + 27px);      
+    }
+
+}
+
+@media (max-width : 620px) {
+    .profile__name {     
+        text-align: center;
+    }
+
+}
