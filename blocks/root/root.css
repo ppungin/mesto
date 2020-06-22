@@ -324,9 +324,9 @@
     color: black;
 }
 
-/* .pop-up_active {
+.pop-up_active {
     display: block;
-} */
+}
 
 .popup__container {
     min-height: 260px;
