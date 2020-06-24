@@ -9,13 +9,12 @@
   <title>Проект MESTO</title>
 </head>
 
-<body>
-  <div class="root">
-    <header class="header">
-      <img src="images/Vector.svg" class="header__logo" alt="Логотип">
-    </header>
 
-    <hr class="line">
+
+ <body class="root"> <!--  Если правильно понял - стиль страницы перевёл сюда  -->
+    <header class="header header_line_bottom">
+      <div class="header__logo"></div>
+    </header>
     
     <main class="content">
 
@@ -24,13 +23,11 @@
         
         <div class="profile__info">
           <h1 class="profile__name">Жак-Ив Кусто</h1>
-          <img src="images/edit_button.svg" class="profile__edit-button" alt="Редактировать">
+          <button class="profile__button_edit profile__button_style"></button>
           <p class="profile__profession">Исследователь океана</p>
         </div>
         
-        <div class="add-button">
-          <img src="images/plus.svg" class="add-button__plus" alt="Добавить">
-        </div>        
+        <button class="profile__add-button profile__button_style"></button>        
       </section>
 
       <section class="elements">
@@ -94,7 +91,6 @@
       <p class="footer__copyright">&copy; 2020 Mesto Russia</p>
     </footer>
 
-  </div>
 
   <script src="scripts/script.js"></script>
 

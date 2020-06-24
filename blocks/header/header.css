@@ -1,32 +1,22 @@
+@import url(./__logo/header__logo.css);
+@import url(./_line/header_line_bottom.css);
+
+
 .header {
     max-width: 882px;
     margin: auto;
     height: 74px;
     padding-top: 45px;
-    padding-left: 19px;
-    padding-right: 19px;
-}
 
-
-.header__logo {
-    width: 142.01px;
-    height: 33.4px;
-    
 }
 
 @media (max-width : 882px) {
     .header{
         padding-top: calc( (100vw - 320px)/(882 - 320) * (45 - 28) + 28px);
-        padding-left: calc( (100vw - 320px)/(882 - 320) * (19 - 27) + 27px);
         height: calc( (100vw - 320px)/(882 - 320) * (74 - 56) + 56px);
     }
 
 }
 
-@media (max-width : 882px) {
-    .header__logo {
-        width: calc( (100vw - 320px)/(882 - 320) * (142.01 - 103.74) + 103.74px);
-        height: calc( (100vw - 320px)/(882 - 320) * (33.4 - 24.4) + 24.4px);
-        
-    }
-}
+
+
