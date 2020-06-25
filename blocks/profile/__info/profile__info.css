@@ -22,17 +22,12 @@
 
 
 
-@media (max-width : 882px) {
-    .profile__info {
-        grid-column-gap: calc( (100vw - 320px)/(882 - 320) * (17 - 4) + 4px);      
-    }
-
-}
 
 @media (max-width : 620px) {
     .profile__info {
         margin: auto;
         margin-top: 10.25px;
+        grid-column-gap: 4px;  
     }
 
 }

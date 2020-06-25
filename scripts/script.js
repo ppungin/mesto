@@ -5,8 +5,8 @@ const saveButton = content.querySelector('.popup__button-save');
 const popUpClose = content.querySelector('.popup__close');
 const profileName = content.querySelector('.profile__name');
 const profileProfession = content.querySelector('.profile__profession');
-const inputName = content.querySelector('.input__text_type_name');
-const inputProfession = content.querySelector('.input__text_type_profession');
+const inputName = content.querySelector('.popup__input_name');
+const inputProfession = content.querySelector('.popup__input_profession');
 
 function editProfile() {
     popUp.classList.add('popup_opened');
