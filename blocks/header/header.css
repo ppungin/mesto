@@ -10,10 +10,10 @@
 
 }
 
-@media (max-width : 882px) {
+@media (max-width : 620px) {
     .header{
-        padding-top: calc( (100vw - 320px)/(882 - 320) * (45 - 28) + 28px);
-        height: calc( (100vw - 320px)/(882 - 320) * (74 - 56) + 56px);
+        padding-top: 28px;
+        height: 56px;
     }
 
 }

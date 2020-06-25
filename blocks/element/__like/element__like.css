@@ -1,3 +1,14 @@
 .element__like{
+    width: 20.76px;
+    height: 18.13px;
     margin-top: 31px;
+    background-image: url(../../../images/like.svg);
+    background-size: contain;
+    border: none;
+    transition: opacity 0.4s ease;
+}
+
+.element__like:hover{
+    opacity: 0.6;
+    cursor: pointer;
 }

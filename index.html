@@ -11,7 +11,7 @@
 
 
 
- <body class="root"> <!--  Если правильно понял - стиль страницы перевёл сюда  -->
+  <body class="root"> <!--  Если правильно понял - стиль страницы перевёл сюда  -->
     <header class="header header_line_bottom">
       <div class="header__logo"></div>
     </header>
@@ -23,77 +23,76 @@
         
         <div class="profile__info">
           <h1 class="profile__name">Жак-Ив Кусто</h1>
-          <button class="profile__button_edit profile__button_style"></button>
+          <button class="profile__button_edit button_style"></button>
           <p class="profile__profession">Исследователь океана</p>
         </div>
         
-        <button class="profile__add-button profile__button_style"></button>        
+        <button class="profile__button_add button_style"></button>        
       </section>
 
       <section class="elements">
+        <ul class="elements__list">
         <div class="element">
           <img src="images/kirill-pershin-1088404-unsplash-1.png" class="element__image" alt="Картинка">
-          <h2 class="element__place element__place_black">Карачаевск</h2>
-          <img src="images/like.svg" class="element__like" alt="Лайк">
+          <h2 class="element__place element__place_text-black">Карачаевск</h2>
+          <button class="element__like button_style"></button>
         </div>
 
-        <div class="element">
+        <li class="element">
           <img src="images/kirill-pershin-1556355-unsplash-1.png" class="element__image" alt="Картинка">
-          <h2 class="element__place element__place_black">Гора Эльбрус</h2>
-          <img src="images/like.svg" class="element__like" alt="Лайк">
-        </div>
+          <h2 class="element__place element__place_text-black">Гора Эльбрус</h2>
+          <button class="element__like button_style"></button>
+        </li>
 
-        <div class="element">
+        <li class="element">
           <img src="images/kirill-pershin-1404681-unsplash-1.png" class="element__image" alt="Картинка">
-          <h2 class="element__place element__place_black">Домбай</h2>
-          <img src="images/like.svg" class="element__like" alt="Лайк">
-        </div>
+          <h2 class="element__place element__place_text-black">Домбай</h2>
+          <button class="element__like button_style"></button>
+        </li>
 
-        <div class="element">
+        <li class="element">
           <img src="images/kirill-pershin-1088404-unsplash-1.png" class="element__image" alt="Картинка">
-          <h2 class="element__place element__place_black">Гора Эльбрус</h2>
-          <img src="images/like.svg" class="element__like" alt="Лайк">
-        </div>
+          <h2 class="element__place element__place_text-black">Гора Эльбрус</h2>
+          <button class="element__like button_style"></button>
+        </li>
 
-        <div class="element">
+        <li class="element">
           <img src="images/kirill-pershin-1556355-unsplash-1.png" class="element__image" alt="Картинка">
-          <h2 class="element__place element__place_black">Домбай</h2>
-          <img src="images/like.svg" class="element__like" alt="Лайк">
-        </div>
+          <h2 class="element__place element__place_text-black">Домбай</h2>
+          <button class="element__like button_style"></button>
+        </li>
 
-        <div class="element">
+        <li class="element">
           <img src="images/kirill-pershin-1404681-unsplash-1.png" class="element__image" alt="Картинка">
-          <h2 class="element__place element__place_black">Карачаево-Черкесск</h2>
-          <img src="images/like.svg" class="element__like" alt="Лайк">
-        </div>
-
+          <h2 class="element__place element__place_text-black">Карачаево-Черкесск</h2>
+          <button class="element__like button_style"></button>
+        </li>
+      </ul>
       </section>
         
-      <div class="popup">
-        
-        <div class="popup__container">
-          <img src="images/close.svg" class="popup__close" alt="Закрыть">
-          <p class="popup__title">Редактировать профиль</p>
-          <input placeholder="Жак-Ив Кусто" class="input__text input__text_type_name">
-          <hr class="line">
-          <input placeholder="Исследователь океана" class="input__text input__text_type_profession">
-          <hr class="line">
-        <div class="popup__button-save">
-          <p class="button-save_text">Сохранить</p>
-        </div>
-        </div>
-
-      </div>
-
     </main>
+
+
 
     <footer class="footer">
       <p class="footer__copyright">&copy; 2020 Mesto Russia</p>
     </footer>
+    
+    <div class="popup">
+        
+      <form class="popup__container">
+        <button class="popup__close button_style"></button>
+        <h3 class="popup__title">Редактировать профиль</h3>
+        <input type="text" placeholder="Имя" class="popup__input popup__input_name">
+        <input type="text" placeholder="Род занятий" class="popup__input popup__input_profession">
+        <button class="popup__button-save popup__button-save_text">Сохранить</button>
+      </form>
 
 
-  <script src="scripts/script.js"></script>
+    </div>
 
-</body>
+    <script src="scripts/script.js"></script>
+
+  </body>
 
 </html>

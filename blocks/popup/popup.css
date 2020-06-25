@@ -4,9 +4,11 @@
 @import url(./__button-save/popup__button-save.css);
 @import url(./__button-save/_text/popup__button-save_text.css);
 @import url(./__close/popup__close.css);
+@import url(./__input/popup__input.css);
+@import url(./__input/_name/popup__input_name.css);
+@import url(./__input/_profession/popup__input_profession.css);
 
 .popup{
-    position:absolute;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
     position: fixed;

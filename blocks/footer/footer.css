@@ -10,10 +10,10 @@
 }
 
 
-@media (max-width : 882px) {
+@media (max-width : 620px) {
     .footer {     
-        margin-top: calc( (100vw - 320px)/(882 - 320) * (66 - 48) + 48px);
-        padding-bottom: calc( (100vw - 320px)/(882 - 320) * (60 - 36) + 36px);
+        margin-top: 48px;
+        padding-bottom: 36px;
     }
 
 }

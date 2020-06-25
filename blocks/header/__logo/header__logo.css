@@ -9,11 +9,12 @@
 }
 
 
+/* По моему с формулами было красивей когда страницу сжимаешь :-) */
 
-@media (max-width : 882px) {
+@media (max-width : 620px) {
     .header__logo {
-        width: calc( (100vw - 320px)/(882 - 320) * (142.01 - 103.74) + 103.74px);
-        height: calc( (100vw - 320px)/(882 - 320) * (33.4 - 24.4) + 24.4px);
-        margin-left: calc( (100vw - 320px)/(882 - 320) * (19 - 27) + 27px);
+        width: 103.74px;
+        height: 24.4px;
+        margin-left: 27px;
     }
 }

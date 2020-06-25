@@ -1,11 +1,17 @@
 .popup__close {
+    padding: 0;
     position: absolute;
+    width: 57.56px;
+    height: 57.56px;
     top: -45px;
     right: -45px;
     z-index: 2;
     -webkit-transition: opacity 0.4s ease;
     -o-transition: opacity 0.4s ease;
     transition: opacity 0.4s ease;
+    background-image: url(../../../images/close.svg);
+    background-size: contain;
+    border: none;
 }
 
 .popup__close:hover{
