@@ -1,9 +1,7 @@
 .profile__button_edit{
     height: 24px;
     margin-bottom: 10px;
-        align-self: end;
-    -webkit-transition: opacity 0.4s ease;
-    -o-transition: opacity 0.4s ease;
+    align-self: end;
     transition: opacity 0.4s ease;
     background-image: url(../../../images/edit_button.svg);
     background-size: contain;

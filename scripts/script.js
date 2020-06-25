@@ -10,23 +10,19 @@ const inputProfession = content.querySelector('.popup__input_profession');
 let form = content.querySelector('.popup__container');
 
 
-function popUpOpen() {
-    popUp.classList.add('popup_opened');
+function popUpToggle() {
+    popUp.classList.toggle('popup_opened');
     inputName.value = profileName.textContent;
     inputProfession.value = profileProfession.textContent;
-}
-
-function popUpClose(){
-    popUp.classList.remove('popup_opened');
 }
 
 function formSubmitHandler(event){
     event.preventDefault();
     profileName.textContent = inputName.value;
     profileProfession.textContent = inputProfession.value;
-    popUpClose();
+    popUpToggle();
 }
 
-editButton.addEventListener('click', popUpOpen);
+editButton.addEventListener('click', popUpToggle);
 form.addEventListener('submit', formSubmitHandler);
-closeIcon.addEventListener('click', popUpClose);
+closeIcon.addEventListener('click', popUpToggle);

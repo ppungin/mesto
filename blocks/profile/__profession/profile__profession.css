@@ -1,15 +1,12 @@
 .profile__profession{
     grid-area: profession;
     width: 100%;
-    height: -webkit-max-content;
-    height: -moz-max-content;
     height: max-content;
     margin: 0;
     font-weight: normal;
     font-size: 18px;
     line-height: 22px;
-    -o-text-overflow: ellipsis;
-       text-overflow: ellipsis;
+    text-overflow: ellipsis;
     float: left;
     overflow: hidden;
     white-space: nowrap;
@@ -21,9 +18,7 @@
         font-size: 14px;
         line-height: 17px;
         margin: auto;
-        -ms-flex-item-align: center;
-            -ms-grid-row-align: center;
-            align-self: center;
+        align-self: center;
         text-align: center;
     }
 
