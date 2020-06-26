@@ -7,22 +7,26 @@ const profileName = content.querySelector('.profile__name');
 const profileProfession = content.querySelector('.profile__profession');
 const inputName = content.querySelector('.popup__input_name');
 const inputProfession = content.querySelector('.popup__input_profession');
-let form = content.querySelector('.popup__container');
+const form = content.querySelector('.popup__container');
 
 
-function popUpToggle() {
-    popUp.classList.toggle('popup_opened');
+function togglePopUp() {
+    if (popUp.classList.contains('popup_opened') === true){
+        popUp.classList.toggle('popup_opened');
+    } else {
     inputName.value = profileName.textContent;
     inputProfession.value = profileProfession.textContent;
+    popUp.classList.toggle('popup_opened');
+    }
 }
 
 function formSubmitHandler(event){
     event.preventDefault();
     profileName.textContent = inputName.value;
     profileProfession.textContent = inputProfession.value;
-    popUpToggle();
+    togglePopUp();
 }
 
-editButton.addEventListener('click', popUpToggle);
+editButton.addEventListener('click', togglePopUp);
 form.addEventListener('submit', formSubmitHandler);
-closeIcon.addEventListener('click', popUpToggle);
+closeIcon.addEventListener('click', togglePopUp);

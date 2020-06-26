@@ -1,5 +1,4 @@
 @import url(./__logo/header__logo.css);
-@import url(./_line/header_line_bottom.css);
 
 
 .header {
@@ -7,7 +6,7 @@
     margin: auto;
     height: 74px;
     padding-top: 45px;
-
+    border-bottom: 1px solid rgba(84, 84, 84, 0.7);
 }
 
 @media (max-width : 620px) {
