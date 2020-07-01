@@ -5,12 +5,11 @@
     background: #000000;
     border-radius: 2px;
     border-color: black;
-    display: grid;
-    transition: opacity 0.4s ease;
-    justify-content: center;
-}
 
-.popup__button-save:hover{
-    opacity: 0.8;
-    cursor: pointer;
+    vertical-align:middle;
+    color: white;
+    text-align: center;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
 }
