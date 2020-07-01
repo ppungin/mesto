@@ -5,7 +5,7 @@ const saveButton = content.querySelector('.popup__button-save');
 const closeIcon = content.querySelector('.popup__close');
 const profileName = content.querySelector('.profile__name');
 const profileProfession = content.querySelector('.profile__profession');
-const inputName = content.querySelector('.popup__input_name');
+const inputName = content.querySelector('.popup__input-name');
 const inputProfession = content.querySelector('.popup__input-profession');
 const form = content.querySelector('.popup__form');
 
