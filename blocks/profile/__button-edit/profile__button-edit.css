@@ -2,19 +2,11 @@
     height: 24px;
     margin-bottom: 13px;
     align-self: end;
-    transition: opacity 0.4s ease;
     background-image: url(../../../images/edit_button.svg);
     background-size: contain;
     border: none;
 
 }
-
-.profile__button-edit:hover{
-    opacity: 0.6;
-    cursor: pointer;
-}
-
-
 
 @media (max-width : 620px) {
     .profile__button-edit {     

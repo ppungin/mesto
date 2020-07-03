@@ -11,17 +11,12 @@
             box-sizing: border-box;
     border-radius: 2px;
     display: grid;
-    transition: opacity 0.4s ease;
     background-image: url(../../../images/plus.svg);
     background-size: 22px 22px;
         background-repeat: no-repeat;
     background-position: center;
 }
 
-.profile__button-add:hover{
-    opacity: 0.6;
-    cursor: pointer;
-}
 
 @media (max-width : 620px) {
     .profile__button-add {
